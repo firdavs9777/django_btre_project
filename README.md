@@ -14,7 +14,7 @@
 ## DESIGN SPECS
 
 - Use BTRE logo (Frontend and admin)
-- Branding colors – 
+- Branding colors –
   - Blue (#10284e)
   - Green (#30caa0)
 - Mobile Friendly
@@ -56,14 +56,19 @@
 - Google maps on listing page
 - Buyer testimonials
 
+## Commands
 
-## Commands 
 # For sql migrate
- python manage.py sqlmigrate listings 0001 
-# For migration 
--  python manage.py makemigrations 
--  python manage.py migrate
-# For connection, django and postgresql, we need those packages 
--  pip install psycopg2-binary
--  pip install psycopg2
--  python manage.py createsuperuser
+
+python manage.py sqlmigrate listings 0001
+
+# For migration
+
+- python manage.py makemigrations
+- python manage.py migrate
+
+# For connection, django and postgresql, we need those packages
+
+- pip install psycopg2-binary
+- pip install psycopg2
+- python manage.py createsuperuser
