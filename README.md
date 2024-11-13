@@ -66,3 +66,4 @@
 # For connection, django and postgresql, we need those packages 
 -  pip install psycopg2-binary
 -  pip install psycopg2
+-  python manage.py createsuperuser
