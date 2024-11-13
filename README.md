@@ -55,3 +55,14 @@
 
 - Google maps on listing page
 - Buyer testimonials
+
+
+## Commands 
+# For sql migrate
+ python manage.py sqlmigrate listings 0001 
+# For migration 
+-  python manage.py makemigrations 
+-  python manage.py migrate
+# For connection, django and postgresql, we need those packages 
+-  pip install psycopg2-binary
+-  pip install psycopg2
