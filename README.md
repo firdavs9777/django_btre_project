@@ -72,3 +72,4 @@ python manage.py sqlmigrate listings 0001
 - pip install psycopg2-binary
 - pip install psycopg2
 - python manage.py createsuperuser
+- pip install pylint-django  <!-- For the json data -->

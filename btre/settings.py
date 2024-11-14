@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'realtors.apps.RealtorsConfig',
     'django.contrib.admin',
     'rest_framework',
+    'django.contrib.humanize',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
