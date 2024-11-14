@@ -24,4 +24,4 @@ urlpatterns = [
     path('listings/', include('listings.urls')),
     path('listings/', include('listings.api_urls')),  # Routes the API-related URLs to listings.api_urls
     path('admin/', admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
