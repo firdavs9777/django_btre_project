@@ -18,7 +18,6 @@ html.lb-disable-scrolling {
   position: absolute;
   top: 0;
   left: 0;
-  justify-content: center;
   z-index: 9999;
   background-color: #000;
   filter: alpha(Opacity=80);
@@ -26,17 +25,11 @@ html.lb-disable-scrolling {
   display: none;
 }
 .lightbox {
-position: fixed; /* Fixed position to cover the full screen */
-  top: 0;
+  position: absolute;
   left: 0;
   width: 100%;
-  height: 100%;
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   z-index: 10000;
   font-weight: 400;
-  overflow: hidden;
 }
 .lightbox .lb-image {
   display: block;
