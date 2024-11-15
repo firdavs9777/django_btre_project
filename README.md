@@ -73,3 +73,8 @@ python manage.py sqlmigrate listings 0001
 - pip install psycopg2
 - python manage.py createsuperuser
 - pip install pylint-django  <!-- For the json data -->
+
+# For Messages, The Message Django Framework used
+
+# For the reset static files, run below mentioned command 
+- python manage.py startapp collectstatic
