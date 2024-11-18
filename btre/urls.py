@@ -23,6 +23,7 @@ urlpatterns = [
     path('api/', include('pages.api_urls')),
     path('listings/', include('listings.urls')),
     path('accounts/', include('accounts.urls')),
+    path('contact/', include('contacts.urls')),
     path('listings/', include('listings.api_urls')),  # Routes the API-related URLs to listings.api_urls
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
