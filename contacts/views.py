@@ -26,6 +26,29 @@ def contact(request):
 
     contact = Contact(listing=listing, listing_id=listing_id, name=name, email=email, phone=phone, message=message, user_id=user_id)
     contact.save()
-    send_mail('Property Listing Inquiry', 'There has been an inquiry for ' + listing + 'Sign in to the admin panel for more info', 'fmutalipov7@gmail.com',[realtor_email, 'techinfo@gmail.com'], fail_silently=False)
+    send_mail(
+    'New Property Listing Inquiry', 
+    f"""
+    Hello,
+
+    You have received a new inquiry for the property listing: {listing}.
+
+    Here are the details of the inquiry:
+
+    - Name: {name}
+    - Email: {email}
+    - Phone: {phone}
+    - Message: {message}
+
+    Please log in to the admin panel to view more information about this inquiry.
+
+    Regards,
+    The Property Team
+    """, 
+    'fmutalipov7@gmail.com', 
+    [realtor_email, 'techinfo@gmail.com'], 
+    fail_silently=False
+    )
+
     messages.success(request, 'Your request has been submitted, a realtor will get back to you soon')
     return redirect('/listings/' + listing_id)
